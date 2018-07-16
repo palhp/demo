@@ -1,36 +1,111 @@
-{
-  "DNG1": [
-    {
-      "exceptionType": "",
-      "exceptionName": "NON_SWA",
-      "count": 22
+[
+  {
+    "sourcePlanLegInfo": {
+      "sourceProperties": {
+        "expectedDepartureWindowEnforced": false,
+        "address": {
+          "nodeId": "SNG1"
+        }
+      }
     },
-    {
-      "exceptionType": "",
-      "exceptionName": "CONFIG_ISSUE_IDENTIFIED",
-      "count": 22
+    "container": {
+      "shipperId": "",
+      "clientId": "",
+      "isSWAPackage": false,
+      "shipperName": "",
+      "operatorAck": false,
+      "packageIdentifiers": {
+        "referenceId": "SNG1_EM_1525787122233",
+        "containerId": "180314101523351317044450221AZ"
+      },
+      "packageIdentifierSortingKey": "SNG1_EM_1525787122233",
+      "shippingInfo": "null"
     },
-    {
-      "exceptionType": "",
-      "exceptionName": "HAZMAT",
-      "count": 22
+    "snapshotTime": 1525787122234,
+    "containerState": {
+      "status": "SIDELINED",
+      "pendingActions": [
+        {}
+      ],
+      "currentCarrierId": "",
+      "location": {
+        "type": "AT_LOCATION",
+        "location": {
+          "nodeId": "SNG1"
+        },
+        "expectedNextLocation": {
+          "nodeId": "440010"
+        },
+        "countryCode": "GB"
+      },
+      "direction": "",
+      "reason": "CONFIG_ISSUE_IDENTIFIED",
+      "location.type": "AT_LOCATION"
+    },
+    "es_metadata_id": "SNG1_EM_1525787122233"
+  },
+  {
+    "sourcePlanLegInfo": {
+      "sourceProperties": {
+        "expectedDepartureWindowEnforced": false,
+        "address": {
+          "nodeId": ""
+        }
+      }
+    },
+    "container": {
+      "shipperId": "",
+      "clientId": "",
+      "isSWAPackage": false,
+      "shipperName": "",
+      "operatorAck": false,
+      "packageIdentifiers": {
+        "referenceId": "SNG1_EM_1526411008650",
+        "containerId": "180314101523351317044450221AZ"
+      },
+      "packageIdentifierSortingKey": "SNG1_EM_1526411008650",
+      "shippingInfo": "null"
+    },
+    "snapshotTime": 1526411008651,
+    "containerState": {
+      "status": "SIDELINED",
+      "pendingActions": [
+        {}
+      ],
+      "currentCarrierId": "",
+      "location": {
+        "type": "AT_LOCATION",
+        "location": {
+          "nodeId": "DNG1"
+        },
+        "expectedNextLocation": {
+          "nodeId": "440010"
+        },
+        "countryCode": "GB"
+      },
+      "direction": "",
+      "reason": "CONFIG_ISSUE_IDENTIFIED",
+      "location.type": "AT_LOCATION"
+    },
+    "es_metadata_id": "SNG1_EM_1526411008650"
+  },
+  {
+    "name": "aggs",
+    "jsonRoot": {
+      "foo1": {
+        "doc_count_error_upper_bound": 0,
+        "sum_other_doc_count": 0,
+        "buckets": [
+          {
+            "key": "DNG1",
+            "doc_count": 1
+          },
+          {
+            "key": "SNG1",
+            "doc_count": 1
+          }
+        ]
+      }
     }
-  ],
-  "SNG1": [
-    {
-      "exceptionType": "",
-      "exceptionName": "NON_SWA",
-      "count": 25
-    },
-    {
-      "exceptionType": "",
-      "exceptionName": "CONFIG_ISSUE_IDENTIFIED",
-      "count": 20
-    },
-    {
-      "exceptionType": "",
-      "exceptionName": "HAZMAT",
-      "count": 220
-    }
-  ]
-}
+  }
+]
